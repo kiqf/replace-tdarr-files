@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  update-json:
+    build: .
+    volumes:
+      - ./data:/data
+    environment:
+      - WORSE_PATH_PREFIX=${WORSE_PATH_PREFIX}
